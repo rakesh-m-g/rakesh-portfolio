@@ -1,3 +1,17 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to crawl the site
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://dotesworld.me/sitemap.xml
+
+# Important pages to prioritize
+Disallow: /admin
+Disallow: /private
+Disallow: /api
+
+# Allow crawling of all public content
+Allow: /about
+Allow: /works
+Allow: /resume
+Allow: /contact
