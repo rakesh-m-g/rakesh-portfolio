@@ -75,6 +75,7 @@ const About: React.FC = () => {
                   boxShadow: "0 0 20px rgba(0, 0, 0, 0.2)",
                 }}
                 whileTap={{ scale: 0.98 }}
+                aria-label="View my resume"
               >
                 Resume
               </motion.button>

@@ -286,26 +286,30 @@ const Resume: React.FC = () => {
         <button
           onClick={handleBack}
           className="bg-slate-700 text-white p-3 rounded-full shadow"
+          aria-label="Go back to previous page"
         >
-          <ArrowLeft size={22} />
+          <ArrowLeft size={22} aria-hidden="true" />
         </button>
         <button
           onClick={() => setScale(scale + 0.1)}
           className="bg-white shadow p-3 rounded-full"
+          aria-label="Zoom in resume"
         >
-          <ZoomIn size={22} />
+          <ZoomIn size={22} aria-hidden="true" />
         </button>
         <button
           onClick={() => setScale(scale - 0.1)}
           className="bg-white shadow p-3 rounded-full"
+          aria-label="Zoom out resume"
         >
-          <ZoomOut size={22} />
+          <ZoomOut size={22} aria-hidden="true" />
         </button>
         <button
           onClick={handleDownload}
           className="bg-slate-700 text-white p-3 rounded-full shadow"
+          aria-label="Download resume PDF"
         >
-          <Download size={22} />
+          <Download size={22} aria-hidden="true" />
         </button>
       </div>
     </div>

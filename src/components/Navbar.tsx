@@ -124,6 +124,7 @@ const Navbar: React.FC = () => {
                 transition: { duration: 0.2, ease: "easeInOut" },
               }}
               whileTap={{ scale: 0.98 }}
+              aria-label="Go to contact page"
             >
               <motion.span
                 className="absolute inset-0 rounded-full bg-black opacity-100"
@@ -142,6 +143,7 @@ const Navbar: React.FC = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-800 focus:outline-none"
+            aria-label={isMenuOpen ? "Close mobile menu" : "Open mobile menu"}
           >
             <svg
               className="w-6 h-6"
@@ -149,6 +151,7 @@ const Navbar: React.FC = () => {
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               {isMenuOpen ? (
                 <path
@@ -209,6 +212,7 @@ const Navbar: React.FC = () => {
                   transition: { duration: 0.2, ease: "easeInOut" },
                 }}
                 whileTap={{ scale: 0.98 }}
+                aria-label="Go to contact page"
               >
                 <motion.span
                   className="absolute inset-0 rounded-full bg-black opacity-100"

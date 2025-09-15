@@ -62,7 +62,7 @@ const portfolioData = {
       description:
         "A conversational AI platform with advanced natural language processing capabilities.",
       imageUrl:
-        "https://via.placeholder.com/600x338/f3f4f6/000000?text=AI+Assistant",
+        "https://placehold.co/600x338/f3f4f6/000000?text=AI+Assistant",
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ const portfolioData = {
       description:
         "Intuitive interface design for next-generation neural network applications.",
       imageUrl:
-        "https://via.placeholder.com/600x338/f3f4f6/000000?text=Neural+Interface",
+        "https://placehold.co/600x338/f3f4f6/000000?text=Neural+Interface",
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ const portfolioData = {
       description:
         "Design system for autonomous vehicle interfaces and monitoring dashboards.",
       imageUrl:
-        "https://via.placeholder.com/600x338/f3f4f6/000000?text=Autonomous+Systems",
+        "https://placehold.co/600x338/f3f4f6/000000?text=Autonomous+Systems",
     },
     {
       id: 6,
@@ -86,7 +86,7 @@ const portfolioData = {
       description:
         "Interactive data visualization tools for complex AI-generated datasets.",
       imageUrl:
-        "https://via.placeholder.com/600x338/f3f4f6/000000?text=Data+Visualization",
+        "https://placehold.co/600x338/f3f4f6/000000?text=Data+Visualization",
     },
   ],
   resume: {
