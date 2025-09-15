@@ -35,7 +35,7 @@ const Resume: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume.pdf;
-    link.download = resume.pdf.split('/').pop() || "resume.pdf";
+    link.download = resume.pdf.split("/").pop() || "resume.pdf";
     link.click();
   };
 
@@ -56,7 +56,7 @@ const Resume: React.FC = () => {
       </div>
 
       {/* Resume Container (no blur) */}
-      <div className="flex-1 flex items-center justify-center relative z-10 p-4">
+      <div className="flex-1 flex items-center justify-center relative z-10 p-4 ">
         <motion.div
           className="relative bg-white shadow-2xl"
           style={{
@@ -74,9 +74,7 @@ const Resume: React.FC = () => {
           {/* Resume Content */}
           <header className="flex justify-between border-b-2 border-gray-300 pb-2 mb-5">
             <div>
-              <h1 className="text-2xl font-bold">
-                {resume.name}
-              </h1>
+              <h1 className="text-2xl font-bold">{resume.name}</h1>
               <p className="text-lg text-gray-700">{resume.title}</p>
             </div>
 
@@ -87,10 +85,7 @@ const Resume: React.FC = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Mail size={16} className="text-black" />
-                <a
-                  href={`mailto:${resume.email}`}
-                  className="hover:underline"
-                >
+                <a href={`mailto:${resume.email}`} className="hover:underline">
                   {resume.email}
                 </a>
               </p>
@@ -102,7 +97,7 @@ const Resume: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  {resume.linkedin.replace('https://', '')}
+                  {resume.linkedin.replace("https://", "")}
                 </a>
               </p>
             </div>
