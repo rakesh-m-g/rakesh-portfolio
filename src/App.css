@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* Custom styles that go beyond Tailwind */
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Ensure the page takes up full height */
+html, body, #root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Hide default cursor when custom cursor is active */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Make sure interactive elements have proper hover states */
+a, button, .interactive {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a:hover, button:hover, .interactive:hover {
+  transform: scale(1.02);
+}
+
+/* Custom animation for the 3D object - subtle pulse effect */
+@keyframes subtle-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1), inset 0 -10px 50px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15), inset 0 -15px 60px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1), inset 0 -10px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+#hero-3d-object {
+  animation: subtle-pulse 8s infinite ease-in-out;
+}
+
+/* Custom cursor styles */
+.cursor {
   pointer-events: none;
+  will-change: transform;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Ensure cursor is visible on all backgrounds */
+@media (prefers-color-scheme: dark) {
+  .cursor div {
+    border-color: white;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  .cursor div:hover {
+    background-color: white;
   }
 }
