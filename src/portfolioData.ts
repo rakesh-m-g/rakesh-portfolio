@@ -45,7 +45,7 @@ const portfolioData = {
       title: "CRM Platform",
       description:
         "Built a scalable CRM with React frontend, Node.js backend, and MySQL DB.",
-      imageUrl: "../public/event-m.png",
+      imageUrl: "/event-m.png",
       link: "#",
     },
     {
