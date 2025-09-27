@@ -53,7 +53,7 @@ const portfolioData = {
       title: "Event Management System",
       description:
         "Developed admin tools for registrations, QR check-ins, and reports.",
-      imageUrl: "/images/event.png",
+      imageUrl: "event.png",
       link: "https://github.com/username/event",
     },
     {
